@@ -11,6 +11,14 @@ int main()
         maxpos=0;
         for(j=1;j<=i;j++)
         {
+             if(arr[maxpos]<arr[j])
+            {
+                maxpos=j;
+            }
+        }
+        temp=arr[i];
+        arr[i]=arr[maxpos];
+        arr[maxpos]=temp;
            
     }
     for(i=0;i<100;i++)
